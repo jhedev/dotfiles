@@ -18,5 +18,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# ls alias
 alias ll='ls -alF'
 alias l='ls -F'
+alias la='ls -aF | egrep "^\."'
