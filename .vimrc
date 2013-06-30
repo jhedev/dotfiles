@@ -22,7 +22,10 @@ filetype indent on
 autocmd InsertEnter * :set relativenumber
 autocmd InsertLeave * :set number
 
+syntax on
+
 cmap w!! %!sudo tee > /dev/null %
+
 if $COLORTERM == 'gnome-terminal'
       set t_Co=256
 endif
