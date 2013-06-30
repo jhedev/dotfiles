@@ -1,5 +1,5 @@
 "Window Handling
-nmap w <C-W>
+"nmap w <C-W>
 
 "status line
 set modeline

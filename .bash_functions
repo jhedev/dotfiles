@@ -1,9 +1,15 @@
+if [ $(uname -s) == "Darwin" ]; then
+    SED="gsed";
+else
+	SED="sed";
+fi
+
 function dict() {
- w3m -dump "http://pocket.dict.cc?s=\"$*\"" | sed -r -e '/^([ ]{5,}.*)$/d' -e '1,2d' -e '/^$/d' -e '/^\[/d'
+ w3m -dump "http://pocket.dict.cc?s=\"$*\"" | $SED -r -e '/^([ ]{5,}.*)$/d' -e '1,2d' -e '/^$/d' -e '/^\[/d'
 }
 
 function leo() {
- w3m -dump "http://pda.leo.org/?search=\"$*\"" | sed -n -e :a -e '1,9!{P;N;D;};N;ba' | sed -e '1,14d'
+ w3m -dump "http://pda.leo.org/?search=\"$*\"" | $SED -n -e :a -e '1,9!{P;N;D;};N;ba' | sed -e '1,14d'
 }
 
 dirsize ()
