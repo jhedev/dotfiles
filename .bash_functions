@@ -12,6 +12,10 @@ function leo() {
  w3m -dump "http://pda.leo.org/?search=\"$*\"" | $SED -n -e :a -e '1,9!{P;N;D;};N;ba' | sed -e '1,14d'
 }
 
+function opdf() {
+    evince $1 &>/dev/null &
+}
+
 dirsize ()
 {
    du -shx * .[a-zA-Z0-9_]* 2> /dev/null | \
