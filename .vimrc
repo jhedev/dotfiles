@@ -29,3 +29,4 @@ cmap w!! %!sudo tee > /dev/null %
 if $COLORTERM == 'gnome-terminal'
       set t_Co=256
 endif
+

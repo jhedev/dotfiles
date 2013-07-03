@@ -22,3 +22,4 @@ fi
 alias ll='ls -alF'
 alias l='ls -F'
 alias la='ls -aF | egrep "^\."'
+alias lal="ls -alF | gawk '\$9 ~ /^\./'"
