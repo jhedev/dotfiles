@@ -85,3 +85,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$PATH"
 ### vagrant binaries
 export PATH="/opt/vagrant/bin:$PATH"
+### Add Haskell bin
+export PATH="$PATH:$HOME/Library/Haskell/bin"
