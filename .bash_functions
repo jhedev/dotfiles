@@ -13,7 +13,11 @@ function leo() {
 }
 
 function opdf() {
-    evince $1 &>/dev/null &
+    if [ $(uname -s) == "Darwin" ]; then
+        open $1;
+    else
+        evince $1 &>/dev/null &
+    fi
 }
 
 dirsize ()
