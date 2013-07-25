@@ -24,6 +24,7 @@ set shiftwidth=4
 set expandtab
 set number
 
+execute pathogen#infect()
 set nocompatible
 filetype plugin on
 filetype indent on
