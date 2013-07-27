@@ -13,7 +13,7 @@ endfunction
 
 "status line
 set modeline
-set statusline=%F%m%r%h%w\ [\%03.3b]\ [\%02.2B]\ [%04l,%04v]\ %{GitBranch()}
+"set statusline=%F%m%r%h%w\ [\%03.3b]\ [\%02.2B]\ [%04l,%04v]\ %{GitBranch()}
 set laststatus=2
 set wildmenu
 
@@ -34,6 +34,7 @@ autocmd InsertEnter * :set relativenumber
 autocmd InsertLeave * :set number
 
 syntax on
+set background=dark
 
 cmap w!! %!sudo tee > /dev/null %
 
@@ -41,3 +42,7 @@ if $COLORTERM == 'gnome-terminal'
       set t_Co=256
 endif
 
+"Powerline 
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:Powerline_symbols = 'fancy'
+set guifont=Menlo\ Regular\ for\ Powerline:h15
