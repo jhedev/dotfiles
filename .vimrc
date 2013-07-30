@@ -1,7 +1,3 @@
-"Window Handling
-"nmap w <C-W>
-
-
 "Git branch taken from http://amix.dk/blog/post/19571
 function! GitBranch()
     let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/*//'")
@@ -54,3 +50,4 @@ map <C-n> :NERDTreeToggle<CR>
 
 "NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
