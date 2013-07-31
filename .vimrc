@@ -20,6 +20,12 @@ set shiftwidth=4
 set expandtab
 set number
 
+"searching
+set incsearch
+set ignorecase
+set smartcase
+
+
 execute pathogen#infect()
 set nocompatible
 filetype plugin on
@@ -42,10 +48,6 @@ endif
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
 set guifont=Menlo\ Regular\ for\ Powerline:h15
-
-
-"NERDTree
-map <C-n> :NERDTreeToggle<CR>
 
 
 "NERDTree
