@@ -91,3 +91,5 @@ if [ $(uname -s) == "Darwin" ]; then
     ### Add Python 3.2 pathes
     export PATH="$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/3.2/bin"
 fi
+### Add home bin folder
+export PATH="$PATH:$HOME/bin"
