@@ -1,12 +1,3 @@
-"Git branch taken from http://amix.dk/blog/post/19571
-function! GitBranch()
-    let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/*//'")
-    if branch != ''
-        return '   Git Branch: ' . substitute(branch, '\n', '', 'g')
-    en
-    return ''
-endfunction
-
 "status line
 set modeline
 "set statusline=%F%m%r%h%w\ [\%03.3b]\ [\%02.2B]\ [%04l,%04v]\ %{GitBranch()}
