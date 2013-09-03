@@ -22,10 +22,6 @@ set nocompatible
 filetype plugin on
 filetype indent on
 
-" relative line numbers when in inesert mode
-autocmd InsertEnter * :set relativenumber
-autocmd InsertLeave * :set number
-
 syntax on
 set background=dark
 
