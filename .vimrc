@@ -48,3 +48,16 @@ map <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 "Esc 
 inoremap jk <Esc>
+
+
+"Search google
+function! Google()
+    let query = substitute(@x, '\n', " ", "")
+    let query = substitute(query, '^\s\+', "", "")
+    let query = substitute(query, '\s\+$', "", "")
+    let query = substitute(query,' \+', "+", "")
+    exe 'silent !open https://google.de/search?q=' . query . "+" . &filetype
+endfunction            
+
+vnoremap <leader>g "xy:silent call Google()<CR>
+nnoremap <leader>g bviw"xy:silent call Google()<CR>
