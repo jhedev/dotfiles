@@ -93,3 +93,6 @@ if [ $(uname -s) == "Darwin" ]; then
 fi
 ### Add home bin folder
 export PATH="$PATH:$HOME/bin"
+
+### Add play folder
+export PATH="$PATH:$HOME/bin/play"
