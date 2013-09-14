@@ -2,6 +2,9 @@ if [ $(uname -s) == "Darwin" ]; then
     SED="gsed";
 else
 	SED="sed";
+    function open() {
+        xdg-open $* &
+    }
 fi
 
 function dict() {
