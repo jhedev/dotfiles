@@ -23,7 +23,7 @@ filetype plugin on
 filetype indent on
 
 syntax on
-set background=dark
+colorscheme monokai
 
 cmap w!! %!sudo tee > /dev/null %
 
