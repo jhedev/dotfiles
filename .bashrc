@@ -90,6 +90,8 @@ if [ $(uname -s) == "Darwin" ]; then
     export PATH="$PATH:$HOME/Library/Haskell/bin"
     ### Add Python 3.2 pathes
     export PATH="$PATH:/opt/local/Library/Frameworks/Python.framework/Versions/3.2/bin"
+    ### Add /opt/local/bin
+    export PATH="$PATH:/opt/local/bin"
 fi
 ### Add home bin folder
 export PATH="$PATH:$HOME/bin"
