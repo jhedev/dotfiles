@@ -24,3 +24,7 @@ alias ll='ls -alFG'
 alias l='ls -FG'
 alias la='ls -aGF | egrep "^\."'
 alias lal="ls -alFG | gawk '\$9 ~ /^\./'"
+
+# cd alias
+alias ..='cd ..'
+alias _='cd -'
