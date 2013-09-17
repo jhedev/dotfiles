@@ -19,7 +19,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # ls alias
-alias ll='ls -alF'
-alias l='ls -F'
-alias la='ls -aF | egrep "^\."'
-alias lal="ls -alF | gawk '\$9 ~ /^\./'"
+alias ls='ls -G'
+alias ll='ls -alFG'
+alias l='ls -FG'
+alias la='ls -aGF | egrep "^\."'
+alias lal="ls -alFG | gawk '\$9 ~ /^\./'"
