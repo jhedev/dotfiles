@@ -77,7 +77,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 ### Shell prompt
-PS1="[\[\033[0;31m\]\u\[\033[1;37m\]@\[\033[0;34m\]\h \[\033[0;32m\]\W\[\033[1;37m\]]\\$ "
+PS1="\[\033[1;37m\][\[\033[0;31m\]\u\[\033[1;37m\]@\[\033[0;34m\]\h \[\033[0;32m\]\W\[\033[1;37m\]]\\$ "
 
 ### Heroku toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
