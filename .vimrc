@@ -34,8 +34,16 @@ endif
 "Powerline 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 let g:Powerline_symbols = 'fancy'
-set guifont=Menlo\ Regular\ for\ Powerline:h15
-
+if has("gui_running")
+  set guioptions-=m "Remove menubar
+  set guioptions-=T "Remove toolbar
+  set guioptions-=r "Remove right hand scroll bar
+  if has("gui_gtk2")
+    set guifont=Menlo\ for\ Powerline\ 15
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular\ for\ Powerline:h15
+  endif
+endif
 
 "Mappings
 let mapleader = ','
