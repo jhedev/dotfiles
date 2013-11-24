@@ -69,3 +69,8 @@ endfunction
 
 vnoremap <leader>g "xy:silent call Google()<CR>
 nnoremap <leader>g bviw"xy:silent call Google()<CR>
+
+"Hotkey for SyntasticToggleMode
+noremap <F1> :SyntasticToggleMode<CR>
+"Hotkey for make
+noremap <F2> :make<CR>
