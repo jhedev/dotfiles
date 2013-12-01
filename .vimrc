@@ -25,6 +25,9 @@ filetype indent on
 syntax on
 colorscheme Monokai
 
+"disable wrap lines
+set nowrap
+
 cmap w!! %!sudo tee > /dev/null %
 
 if $COLORTERM == 'gnome-terminal'
