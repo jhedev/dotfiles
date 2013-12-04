@@ -1,6 +1,5 @@
 "status line
 set modeline
-"set statusline=%F%m%r%h%w\ [\%03.3b]\ [\%02.2B]\ [%04l,%04v]\ %{GitBranch()}
 set laststatus=2
 set wildmenu
 
