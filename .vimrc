@@ -75,4 +75,4 @@ nnoremap <leader>g bviw"xy:silent call Google()<CR>
 "Hotkey for SyntasticToggleMode
 noremap <F3> :SyntasticToggleMode<CR>
 "Hotkey for make
-noremap <F2> :make<CR>
+noremap <F2> :make!<CR>
