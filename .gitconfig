@@ -18,6 +18,7 @@
     whitespace = white reverse
 [core]
 	editor = vim
+	autocrlf = input
 [credential]
 	helper = osxkeychain
 [branch "master"]
