@@ -66,5 +66,6 @@ export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:/opt/local/bin
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-alias open=xdg-open
+if [[ $(uname -s) == "Linux" ]]; then
+    alias open=xdg-open
+fi
