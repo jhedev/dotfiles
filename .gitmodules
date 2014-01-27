@@ -34,3 +34,6 @@
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = git@github.com:jhedev/oh-my-zsh.git
+[submodule ".vim/bundle/shakespearean"]
+	path = .vim/bundle/shakespearean
+	url = git@github.com:pbrisbin/html-template-syntax.git
