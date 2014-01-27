@@ -69,3 +69,7 @@ export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:/opt/local/bin
 if [[ $(uname -s) == "Linux" ]]; then
     alias open=xdg-open
 fi
+
+bindkey -v
+bindkey -M viins 'jk' vi-cmd-mode
+bindkey -M vicmd 'k' history-beginning-search-backward
