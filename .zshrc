@@ -47,6 +47,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 if [[ $(uname -s) == "Darwin" ]]; then
+    source $ZSH/custom/.zsh_functions_mac
     plugins=(osx macports)
 else
     plugins=(archlinux)

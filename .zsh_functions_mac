@@ -1,0 +1,5 @@
+function set_bg() {
+    osascript -e "tell application \"Finder\"
+                    set desktop picture to alias \"Macintosh HD:Users:joel:Pictures:$1\"
+                  end tell"
+}
