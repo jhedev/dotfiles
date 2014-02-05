@@ -47,13 +47,17 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 if [[ $(uname -s) == "Darwin" ]]; then
+    EDITOR=mvim
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
 else
+    EDITOR=gvim
     plugins=(archlinux)
 fi
 
-plugins=(${plugins} git zsh-syntax-highlighting extract gitignore sudo vagrant web-search)
+plugins=(${plugins} git zsh-syntax-highlighting extract gitignore sudo cabal vagrant web-search)
+
+alias e=$EDITOR
 
 source $ZSH/oh-my-zsh.sh
 
