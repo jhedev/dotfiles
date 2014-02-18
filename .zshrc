@@ -48,6 +48,7 @@ ZSH_THEME="agnoster"
 
 if [[ $(uname -s) == "Darwin" ]]; then
     EDITOR=mvim
+    alias emacs="open -a Emacs"
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
 else
