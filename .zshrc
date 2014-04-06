@@ -51,6 +51,7 @@ if [[ $(uname -s) == "Darwin" ]]; then
     alias emacs="open -a Emacs"
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
+    PATH=$HOME/Library/Haskell/bin:$PATH
 else
     EDITOR=gvim
     plugins=(archlinux)
