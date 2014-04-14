@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/shakespearean"]
 	path = .vim/bundle/shakespearean
 	url = git@github.com:pbrisbin/html-template-syntax.git
+[submodule ".vim/bundle/vim-clang-format"]
+	path = .vim/bundle/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format.git
