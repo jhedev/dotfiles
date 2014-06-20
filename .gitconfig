@@ -27,3 +27,5 @@
     merge = refs/heads/master
 [merge]
 	tool = vimdiff
+[push]
+	default = simple
