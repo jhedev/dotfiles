@@ -47,7 +47,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 if [[ $(uname -s) == "Darwin" ]]; then
-    EDITOR=mvim
+    EDITOR=/Applications/MacVim/mvim
     alias emacs="emacs-24.3"
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
@@ -65,7 +65,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/.cabal/bin:$HOME/bin:/usr/local/bin:$PATH:/opt/local/bin:.cabal-sandbox/bin
+export PATH=.cabal-sandbox/bin:$HOME/.cabal/bin:$HOME/bin:/opt/local/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
