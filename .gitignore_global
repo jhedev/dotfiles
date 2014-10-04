@@ -1,1 +1,16 @@
+#OS X
+.DS_STORE
+
+#Vim
 *.swp
+
+#Emacs files
+\#*\#
+*~
+
+#Python
+.pyc
+
+#Haskell
+.cabal-sandbox
+cabal.sandbox.config
