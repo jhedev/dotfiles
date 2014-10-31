@@ -98,3 +98,4 @@ export PATH="$PATH:$HOME/bin"
 
 ### Add play folder
 export PATH="$PATH:$HOME/bin/play"
+export PATH=~/.cabal/bin:.cabal-sandbox/bin:/Users/joel/.cabal/bin:/Users/joel/bin:/opt/local/bin:/usr/local/bin:/Users/joel/Library/Haskell/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/CrossPack-AVR/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/usr/texbin

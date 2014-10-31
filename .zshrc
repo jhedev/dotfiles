@@ -48,7 +48,7 @@ ZSH_THEME="agnoster"
 
 if [[ $(uname -s) == "Darwin" ]]; then
     EDITOR=/Applications/MacVim/mvim
-    alias emacs="emacs-24.3"
+    alias emacs="emacs-24.4"
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
     PATH=$HOME/Library/Haskell/bin:$PATH
