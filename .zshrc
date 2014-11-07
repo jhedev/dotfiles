@@ -90,14 +90,4 @@ bindkey -M vicmd 'k' history-beginning-search-backward
 bindkey -M vicmd 'j' history-beginning-search-forward
 bindkey -M viins '\e\e' sudo-command-line
 
-pdfcount() {
-    pdfinfo $@ | grep "^Pages: *[0-9]\+$" | sed 's/.* //'
-}
-
-pdfcounts() {
-    c=0
-    for i in $*; do
-        c=$(($c+$(pdfcount $i)))
-    done
-    echo $c
-}
+source .zsh_functions

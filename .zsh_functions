@@ -1,0 +1,25 @@
+if [ $(uname -s) = "Darwin" ]; then
+    SED="gsed";
+else
+    SED="sed";
+fi
+
+pdfcount() {
+    pdfinfo $@ | grep "^Pages: *[0-9]\+$" | sed 's/.* //'
+}
+
+pdfcounts() {
+    c=0
+    for i in $*; do
+        c=$(($c+$(pdfcount $i)))
+    done
+    echo $c
+}
+
+dict() {
+      w3m -dump "http://pocket.dict.cc?s=\"$*\"" | $SED -r -e '/^([ ]{5,}.*)$/d' -e '1,2d' -e '/^$/d' -e '/^\[/d'
+}
+
+leo() {
+      w3m -dump "http://pda.leo.org/?search=\"$*\"" | $SED -n -e :a -e '1,9!{P;N;D;};N;ba' | sed -e '1,14d'
+}
