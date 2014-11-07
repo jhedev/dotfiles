@@ -90,4 +90,4 @@ bindkey -M vicmd 'k' history-beginning-search-backward
 bindkey -M vicmd 'j' history-beginning-search-forward
 bindkey -M viins '\e\e' sudo-command-line
 
-source .zsh_functions
+source $HOME/.zsh_functions
