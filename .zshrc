@@ -37,7 +37,7 @@ ZSH_THEME="agnoster"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -91,3 +91,6 @@ bindkey -M vicmd 'j' history-beginning-search-forward
 bindkey -M viins '\e\e' sudo-command-line
 
 source $HOME/.zsh_functions
+source $HOME/.keys
+export GOPATH=$HOME/code/go/
+export NIX_PATH=$HOME/code/nix/nixpkgs:nixpkgs=$HOME/code/nix/nixpkgs

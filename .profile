@@ -9,3 +9,4 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 if [ -f "$HOME/.bashrc" ]; then 
     source "$HOME/.bashrc"
 fi
+if [ -e /Users/joel/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/joel/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
