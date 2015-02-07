@@ -51,6 +51,9 @@ if [[ $(uname -s) == "Darwin" ]]; then
     alias emacs="emacs-24.4"
     alias preview="open -a Preview"
     alias spotify="open -a Spotify"
+    alias skype="open -a Skype"
+    alias email="open -a Mail"
+    alias chrome="open -a 'Google Chrome'"
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
     PATH=$HOME/Library/Haskell/bin:$PATH
