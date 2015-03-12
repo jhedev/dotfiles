@@ -89,7 +89,7 @@ if [[ $(uname -s) == "Linux" ]]; then
 fi
 
 bindkey -v
-bindkey -M viins 'jk' vi-cmd-mode
+bindkey -M viins 'fd' vi-cmd-mode
 bindkey -M vicmd 'k' history-beginning-search-backward
 bindkey -M vicmd 'j' history-beginning-search-forward
 bindkey -M viins '\e\e' sudo-command-line

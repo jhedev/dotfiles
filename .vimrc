@@ -57,7 +57,7 @@ map <C-n> :NERDTreeToggle<CR>
 "quotation
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 "Esc 
-inoremap jk <Esc>
+inoremap fd <Esc>
 
 
 "Search google
