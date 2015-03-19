@@ -4,5 +4,5 @@
                                           :width normal
                                           :powerline-scale 1.1))
 
-(setq-default dotspacemacs-configuration-layers '(haskell osx))
+(setq-default dotspacemacs-configuration-layers '(haskell osx python))
 (setq-default dotspacemacs-themes '(monokai))
