@@ -6,3 +6,6 @@
 
 (setq-default dotspacemacs-configuration-layers '(haskell osx python))
 (setq-default dotspacemacs-themes '(monokai))
+
+(setq mac-option-key-is-meta t)
+(setq mac-right-option-modifier nil)
