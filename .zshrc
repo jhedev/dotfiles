@@ -68,8 +68,6 @@ alias e=$EDITOR
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export PATH=.cabal-sandbox/bin:$HOME/.cabal/bin:$HOME/bin:/opt/local/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -97,4 +95,3 @@ bindkey -M viins '\e\e' sudo-command-line
 source $HOME/.zsh_functions
 source $HOME/.keys
 export GOPATH=$HOME/code/go/
-export NIX_PATH=$HOME/code/nix/nixpkgs:nixpkgs=$HOME/code/nix/nixpkgs
