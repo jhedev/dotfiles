@@ -4,7 +4,17 @@
                                           :width normal
                                           :powerline-scale 1.1))
 
-(setq-default dotspacemacs-configuration-layers '(haskell osx python))
+(setq-default dotspacemacs-configuration-layers
+    '(haskell
+      python
+      git
+      dockerfile
+      extra-langs ;; contains rust-mode
+      clojure
+      auto-completion
+      syntax-checking
+      ))
+
 (setq-default dotspacemacs-themes '(monokai))
 
 (setq mac-option-key-is-meta t)
