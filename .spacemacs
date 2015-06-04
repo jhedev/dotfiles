@@ -5,13 +5,19 @@
                                           :powerline-scale 1.1))
 
 (setq-default dotspacemacs-configuration-layers
-    '(haskell
-      python
-      git
-      dockerfile
-      extra-langs ;; contains rust-mode
-      clojure
+    '(auctex
       auto-completion
+      clojure
+      dockerfile
+      git
+      haskell
+      markdown
+      osx
+      purescript
+      python
+      rust
+      shell
+      spotify
       syntax-checking
       ))
 
@@ -19,3 +25,8 @@
 
 (setq mac-option-key-is-meta t)
 (setq mac-right-option-modifier nil)
+
+(setq-default TeX-master nil)
+(add-hook 'doc-view-mode-hook 'auto-revert-mode)
+
+(setq ispell-program-name "aspell")
