@@ -93,5 +93,4 @@ bindkey -M vicmd 'j' history-beginning-search-forward
 bindkey -M viins '\e\e' sudo-command-line
 
 source $HOME/.zsh_functions
-source $HOME/.keys
 export GOPATH=$HOME/code/go/
