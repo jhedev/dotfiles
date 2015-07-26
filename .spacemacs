@@ -5,12 +5,12 @@
                                           :powerline-scale 1.1))
 
 (setq-default dotspacemacs-configuration-layers
-    '(auctex
-      auto-completion
+    '(auto-completion
       clojure
       dockerfile
       git
       haskell
+      latex
       markdown
       osx
       purescript
