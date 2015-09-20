@@ -7,7 +7,10 @@
 (setq-default dotspacemacs-configuration-layers
     '(auto-completion
       clojure
+      c-c++
       dockerfile
+      elixir
+      erlang
       git
       haskell
       latex
