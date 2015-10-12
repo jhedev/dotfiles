@@ -10,8 +10,10 @@
       c-c++
       dockerfile
       elixir
+      elm
       erlang
       git
+      java
       haskell
       latex
       markdown
@@ -22,6 +24,7 @@
       shell
       spotify
       syntax-checking
+      terraform
       ))
 
 (setq-default dotspacemacs-themes '(monokai))
