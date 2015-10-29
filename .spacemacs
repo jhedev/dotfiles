@@ -38,3 +38,13 @@
 (add-hook 'doc-view-mode-hook 'auto-revert-mode)
 
 (setq ispell-program-name "aspell")
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(custom-set-variables
+'(safe-local-variable-values
+  (quote
+   ((haskell-indent-spaces . 2)
+    (haskell-process-args-ghci "ghci")
+    (haskell-process-path-ghci . "stack")
+    (haskell-process-type . stack-ghci)))))
