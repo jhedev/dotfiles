@@ -94,3 +94,5 @@ bindkey -M viins '\e\e' sudo-command-line
 
 source $HOME/.zsh_functions
 export GOPATH=$HOME/code/go/
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
