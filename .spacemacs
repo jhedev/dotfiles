@@ -11,12 +11,14 @@
       dockerfile
       elixir
       elm
+      emoji
       erlang
       git
       java
       haskell
       latex
       markdown
+      ocaml
       osx
       purescript
       python
