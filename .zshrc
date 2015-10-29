@@ -61,7 +61,7 @@ else
     EDITOR=gvim
     plugins=(archlinux)
 fi
-plugins=(${plugins} git zsh-syntax-highlighting extract gitignore sudo cabal vagrant web-search docker docker-compose)
+plugins=(${plugins} git zsh-syntax-highlighting extract gitignore sudo cabal vagrant web-search docker docker-compose docker-machine)
 
 alias e=$EDITOR
 
