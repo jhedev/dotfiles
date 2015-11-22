@@ -17,7 +17,7 @@
     new = green reverse
     whitespace = white reverse
 [core]
-	editor = vim
+	editor = emacsclient
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
 [credential]
