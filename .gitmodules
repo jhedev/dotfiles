@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-clang-format"]
 	path = .vim/bundle/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git@github.com:syl20bnr/spacemacs.git
