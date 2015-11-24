@@ -56,7 +56,6 @@ if [[ $(uname -s) == "Darwin" ]]; then
     alias chrome="open -a 'Google Chrome'"
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
-    PATH=$HOME/Library/Haskell/bin:$PATH
 else
     EDITOR=gvim
     plugins=(archlinux)
@@ -94,5 +93,3 @@ bindkey -M viins '\e\e' sudo-command-line
 
 source $HOME/.zsh_functions
 export GOPATH=$HOME/code/go/
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
