@@ -93,3 +93,5 @@ bindkey -M viins '\e\e' sudo-command-line
 
 source $HOME/.zsh_functions
 export GOPATH=$HOME/code/go/
+
+export PATH=/usr/local/bin:$PATH
