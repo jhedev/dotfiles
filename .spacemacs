@@ -22,6 +22,7 @@
       osx
       purescript
       python
+      react
       rust
       shell
       spotify
