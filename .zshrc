@@ -95,3 +95,6 @@ source $HOME/.zsh_functions
 export GOPATH=$HOME/code/go/
 
 export PATH=/usr/local/bin:$PATH
+
+alias fe1='ssh -t aia ssh -t fe1'
+alias fe1zsh='fe1 zsh'
