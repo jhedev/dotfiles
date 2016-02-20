@@ -6,24 +6,20 @@
 
 (setq-default dotspacemacs-configuration-layers
     '(auto-completion
-      clojure
       c-c++
       dockerfile
       elixir
-      elm
       emoji
-      erlang
       git
-      java
       haskell
       latex
       markdown
-      ocaml
       osx
       purescript
       python
       react
       rust
+      scala
       shell
       spotify
       syntax-checking
