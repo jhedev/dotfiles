@@ -5,7 +5,11 @@ else
 fi
 
 pdfcount() {
-    pdfinfo $@ | grep "^Pages: *[0-9]\+$" | sed 's/.* //'
+    if [ $(uname -s) = "Darwin" ]; then
+        mdls -n kMDItemNumberOfPages "$@" | cut -c24-;
+    else
+        pdfinfo $@ | grep "^Pages: *[0-9]\+$" | sed 's/.* //';
+    fi
 }
 
 pdfcounts() {
