@@ -1,5 +1,5 @@
 (setq-default dotspacemacs-default-font '("Source Code Pro For Powerline"
-                                          :size 18
+                                          :size 15
                                           :weight normal
                                           :width normal
                                           :powerline-scale 1.1))
