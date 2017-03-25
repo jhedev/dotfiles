@@ -1,5 +1,6 @@
 export PATH="${HOME}/bin:${HOME}/.local/bin:${PATH}"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/code/go/bin"
 
 if [[ $(uname -s) == "Darwin" ]]; then
     export PATH="/opt/local/bin:${PATH}"
