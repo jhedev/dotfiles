@@ -17,7 +17,7 @@
     new = green reverse
     whitespace = white reverse
 [core]
-	editor = emacsclient
+	editor = /usr/local/opt/emacs/bin/emacsclient
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
 [credential]
