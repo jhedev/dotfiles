@@ -47,7 +47,7 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
 if [[ $(uname -s) == "Darwin" ]]; then
-    EDITOR=/Applications/MacVim/mvim
+    export EDITOR=emacsclient
     alias emacs="emacs-24.4"
     alias preview="open -a Preview"
     alias spotify="open -a Spotify"
@@ -56,34 +56,11 @@ if [[ $(uname -s) == "Darwin" ]]; then
     alias chrome="open -a 'Google Chrome'"
     source $HOME/.zsh_functions_mac
     plugins=(osx macports)
-else
-    EDITOR=gvim
-    plugins=(archlinux)
 fi
-plugins=(${plugins} git zsh-syntax-highlighting extract gitignore sudo cabal vagrant web-search docker docker-compose docker-machine)
 
-alias e=$EDITOR
+plugins=(zsh-you-should-use ${plugins} git zsh-syntax-highlighting extract gitignore sudo cabal vagrant web-search docker docker-compose docker-machine fasd)
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-if [[ $(uname -s) == "Linux" ]]; then
-    alias open=xdg-open
-fi
 
 bindkey -v
 bindkey -M viins 'fd' vi-cmd-mode
@@ -96,8 +73,32 @@ export GOPATH=$HOME/code/go/
 
 export PATH=/usr/local/bin:$PATH
 
-alias fe1='ssh -t aia ssh -t fe1'
-alias fe1zsh='fe1 zsh'
-
-
+alias e="open -a Emacs"
 alias m=make
+alias tf=terraform
+alias k=kubectl
+
+alias emacsclient=/usr/local/opt/emacs/bin/emacsclient
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+#AWSume alias to source the AWSume script
+alias awsume=". \$(pyenv which awsume)"
+fpath=(/usr/local/share/zsh/site-functions $fpath)
